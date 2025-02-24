@@ -13,13 +13,18 @@ title: 11ty Boilerplate
   <script src="https://cdn.jsdelivr.net/npm/@alpinejs/fetch@3.x.x/dist/cdn.min.js" defer></script>
   <link rel="stylesheet" href="/styles/screen.css">
 </head>
-<body>
-  <nav>
-    <ul>
-      <li><a href="/" title="Home">Home</a></li>
-      <li><a href="/AIeval/" title="AI Evaluation">AI Evaluation</a></li>
-    </ul>
-  </nav>
+<body class="bg-blue-100 text-gray-900 min-h-screen flex flex-col">
+
+    <!-- Navigation Bar -->
+    <nav class="bg-white shadow-md py-7 mb-9">
+        <div class="max-w-5xl mx-auto px-6 flex justify-between items-center">
+            <a href="/" class="text-xl font-bold text-blue-500">MySite</a>
+            <div class="space-x-4">
+                <a href="/" class="text-gray-700 hover:text-blue-400">Home</a>
+                <a href="/AIeval" class="text-gray-700 hover:text-blue-400">AI Evaluation</a>
+            </div>
+        </div>
+    </nav>
     {{ content }}
 </body>
 </html>
